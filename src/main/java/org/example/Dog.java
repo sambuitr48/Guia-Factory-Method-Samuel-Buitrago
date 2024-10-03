@@ -1,2 +1,13 @@
-package org.example;public class Dog {
+package org.example;
+/**
+ * Clase concreta que representa un perro.
+ */
+public class Dog implements Pet {
+    @Override
+    public void speak() {
+        System.out.println("Woof!"); // El perro ladra
+    }
 }
+
+
+

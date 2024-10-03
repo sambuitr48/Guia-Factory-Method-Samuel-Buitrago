@@ -1,2 +1,11 @@
-package org.example;public class CatFactory {
+package org.example;
+
+/**
+ * Fábrica concreta que crea una instancia de gato.
+ */
+public class CatFactory extends PetFactory {
+    @Override
+    public Pet createPet() {
+        return new Cat(); // Retorna una instancia de Cat
+    }
 }
